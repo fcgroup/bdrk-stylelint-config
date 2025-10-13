@@ -4,6 +4,11 @@ on:
     workflows: [Continuous Integration]
     types: [completed]
     branches: [main]
+
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   semantic_release:
     name: Semantic Release
